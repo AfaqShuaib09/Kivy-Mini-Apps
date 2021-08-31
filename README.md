@@ -8,7 +8,7 @@
 
 
 - Youtube Downloader App
-<img src="https://github.com/AfaqShuaib09//Kivy-Mini-App/blob/main/yt_downloader_preview.PNG" width="50%">
+<img align="center" src="https://github.com/AfaqShuaib09/Kivy-Mini-Apps/blob/main/yt_downloader_preview.PNG" width="30%">
 
 ----
 
