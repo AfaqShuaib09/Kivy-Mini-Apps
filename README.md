@@ -2,7 +2,7 @@
 ----
 
 - Greeting App
-<img align="center" src="https://github.com/AfaqShuaib09/Kivy-Mini-Apps/blob/main/greeting_app_preview.PNG" width="100%">
+<img align="center" src="https://github.com/AfaqShuaib09/Kivy-Mini-Apps/blob/main/greeting_app_preview.PNG" width="30%">
 
 ----
 
