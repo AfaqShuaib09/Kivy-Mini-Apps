@@ -1,0 +1,29 @@
+<userInterface>:
+
+userInterface:
+    cols : 1
+    size_hint : 0.7, 0.9
+    pos_hint : {"center_x": 0.5, "center_y":0.5}
+    Image :
+        source : 'Greeting_App.png'
+        #size_hint : None, None
+        #size : dp(350) , dp(350)
+        #pos : '300px', 400
+        allow_stretch : True
+        keep_ratio : False
+    Label :
+        id : name_label
+        text : "What's your name?"
+        color : '#00FFCE'
+        font_size : dp(16)
+    TextInput:
+        id : text_area
+        multiline: False
+        padding_y : (20,20),
+        size_hint : (1, 0.3)
+    Button :
+        text: "GREET"
+        size_hint : (1,0.3)
+        bold : True
+        background_color : '#00FFCE'
+        on_press : root.greet(self, name_label, text_area.text)

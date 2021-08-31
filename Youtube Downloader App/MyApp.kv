@@ -1,0 +1,63 @@
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+
+<FirstWindow>:
+    name: "first"
+    cols : 1
+    size_hint : 0.7, 0.9
+    pos_hint : {"center_x": 0.5, "center_y":0.5}
+    Image :
+        source : 'youtube-logo-png.png'
+        size_hint : None, None
+        size : dp(250) , dp(250)
+        pos : '20px', 300
+        allow_stretch : True
+        keep_ratio : False
+    Label :
+        id : name_label
+        text : "Download Your Favourite Vedio"
+        color : '#FF0000'
+        font_size : dp(16)
+    Button :
+        text: "StartApp"
+        size_hint : (1,0.1)
+        bold : True
+        #background_normal : ""
+        background_color : '#FF0000'
+        on_release :
+            root.manager.transition.direction = 'left'
+            app.root.current = "second"
+
+
+<SecondWindow>:
+    name : "second"
+    cols : 1
+    size_hint : 0.7, 0.9
+    pos_hint : {"center_x": 0.5, "center_y":0.5}
+    Image :
+        source : 'youtube-logo-png.png'
+        size_hint : None, None
+        size : dp(250) , dp(250)
+        pos : '20px', 300
+        allow_stretch : True
+        keep_ratio : False
+    Label :
+        id : name_label
+        text : "Paste your link below"
+        color : '#FF0000'
+        font_size : dp(16)
+    TextInput:
+        id : text_area
+        padding_y : (20,20),
+        size_hint : (1, 0.2)
+    Button :
+        text: "Download"
+        size_hint : (1,0.1)
+        bold : True
+        #background_normal : ""
+        background_color : '#FF0000'
+        on_press : root.parent.download_vedio_from_link(text_area.text, name_label)
+        #on_release :
+        #    root.manager.transition.direction = 'right'
+        #    app.root.current = "first"
